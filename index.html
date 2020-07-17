@@ -7,18 +7,256 @@
     <title>Samuel Yoo</title>
     <style>
 
+        .mainNav{
+            border-color: transparent;
+            background-color: transparent;
+            font-family: Open Sans, Helvetica Neue, Arial, sans-serif;
+        }
+
+        #mainHeader {
+            background-image: url("assets/image/headerBg.jpg");
+            opacity: 90%;
+            height: 500px;
+        }
+
+        .bgColor{
+            background-color: #767676;
+        }
+
+        section{
+            padding: 8rem 0;
+        }
+
+        .portfolio-box:hover .portfolio-box-caption {
+            opacity:1;
+        }
+
+        .portfolio-box .portfolio-box-caption{
+            position: absolute;
+            bottom: 0;
+            display:block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            opacity: 0;
+            color: white;
+            background-color: #00A699;
+        }
     </style>
 </head>
-<body>
-    <nav class="mainNav"></nav>
-    <header class="mainHeader"></header>
-    <section class="info"></section>
-    <section class="techInfo"></section>
-    <section class="portfolio"></section>
-    <section class="contactInfo"></section>
-    <script>
-        
-    </script>
+<body id="pageTop">
+    <nav class="mainNav navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#pageTop">Samuel Yoo</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContents" aria-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContents">
+              <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link js-scroll-trigger" href="#info">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link js-scroll-trigger dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://github.com/samuelyoo/" alt="GitHub Url"><i class="fab fa-github"></i>GitHub</a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/samuel-hc-yoo/" alt="linkedin Url"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+                    <a class="dropdown-item" href="assets/documents/resume_SamuelYoo.pdf" alt="resume Url"><i class="fab fa-instagram"></i>Resume</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#contactInfo">Contact Info</a>
+                </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="mainHeader" class="masthead text-center text-white d-flex">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase">Hi! I'm Samuel Yoo!</h1>
+                <hr />
+                </div>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+            </div>
+        </div>
+    </header>
+
+    <section id="info" class="bgColor">
+        <div id ="tectInfo" class="container">
+            <div class="row">
+                <div class="col offset-lg-8 mx-auto text-center">
+                    <h2 class="intro">
+                        this is Intro
+                    </h2>
+                    <hr class="my-4"/>
+                    <p class="introContent">orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                    <a href="assets/documents/resume_SamuelYoo.pdf" class="btn btn-light btn-xl js-scroll-trigger" role="button">Check Out Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="techInfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg text-center">
+                    <h2 class="sectionHead">Technical Skills</h2>
+                    <hr class="my-4"/>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 d-flex justify-content-around p-1 pb-3">
+                  <img src="/assets/image/logo/html.png" height="40" class="d-inline-block align-top" alt="html logo">
+                  <img src="assets/image/logo/css.png" height="40" class="d-inline-block align-top" alt="css logo">
+                  <img src="/assets/image/logo/javascript.png" height="40" class="d-inline-block align-top" alt="javascriptlogo">
+                </div>
+                <div class="col-md-6 d-flex justify-content-around p-1 pb-3">
+                    <img src="/assets/image/logo/python.png" height="40" class="d-inline-block align-top" alt="python logo">
+                    <img src="/assets/image/logo/sql.png" height="30" class="d-inline-block align-top" alt="sql logo">
+                    <img src="/assets/image/logo/mongoDB.png" height="30" class="d-inline-block align-top" alt="mongodb logo">
+                    <img src="/assets/image/logo/git.png" height="30" class="d-inline-block align-top" alt="git logo">
+                  </div>
+              </div>
+              <div class="row text-center">
+                <div class="col-md-6 d-flex justify-content-around p-1 pb-3">
+                    <img src="/assets/image/logo/nodejs.png" height="40" class="d-inline-block align-top" alt="nodejs logo">
+                    <img src="/assets/image/logo/react.png" height="40" class="d-inline-block align-top" alt="react logo">
+                    <img src="/assets/image/logo/obj_c.png" height="40" class="d-inline-block align-top" alt="objective c logo">
+                    
+                </div>
+                <div class="col-md-6 d-flex justify-content-around p-1 pb-3">
+                    <img src="/assets/image/logo/jQuery.png" height="20" class="d-inline-block align-top mt-3" alt="jquery logo">
+                    <img src="/assets/image/logo/bootstrap.png" height="40" class="d-inline-block align-top" alt="bootstrap logo">
+                    <img src="/assets/image/logo/Matlab_Logo.png" height="40" class="d-inline-block align-top" alt="matlab logo">
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-sm6 col-lg-4">
+                    <div href="" class="portfolio-box">
+                        <img src="assets/image/portfolio/pageExchange.jpg" alt="" class="img-fluid"/>
+                        <div class="portfolio-box-caption">
+                            <div class="projectTitle">
+                                <span>Project1</span>
+                            </div>
+                            <div class="projectDescrtion">
+                                <span>Lorem ,.................................</span>
+                            </div>
+                            <div class="link">
+                                <a href="https://obscure-stream-03506.herokuapp.com" class="btn btn-primary m-1">Link</a> 
+                                <a href="https://github.com/samuelyoo/TheSemicolons" class="btn btn-primary m-1">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm6 col-lg-4">
+                    <div href="" class="portfolio-box">
+                        <img src="assets/image/portfolio/pageExchange.jpg" alt="" class="img-fluid"/>
+                        <div class="portfolio-box-caption">
+                            <div class="projectTitle">
+                                <span>Project1</span>
+                            </div>
+                            <div class="projectDescrtion">
+                                <span>Lorem ,.................................</span>
+                            </div>
+                            <div class="link">
+                                <a href="https://obscure-stream-03506.herokuapp.com" class="btn btn-primary m-1">Link</a> 
+                                <a href="https://github.com/samuelyoo/TheSemicolons" class="btn btn-primary m-1">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm6 col-lg-4">
+                    <div href="" class="portfolio-box">
+                        <img src="assets/image/portfolio/pageExchange.jpg" alt="" class="img-fluid"/>
+                        <div class="portfolio-box-caption">
+                            <div class="projectTitle">
+                                <span>Project1</span>
+                            </div>
+                            <div class="projectDescrtion">
+                                <span>Lorem ,.................................</span>
+                            </div>
+                            <div class="link">
+                                <a href="https://obscure-stream-03506.herokuapp.com" class="btn btn-primary m-1">Link</a> 
+                                <a href="https://github.com/samuelyoo/TheSemicolons" class="btn btn-primary m-1">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm6 col-lg-4">
+                    <div href="" class="portfolio-box">
+                        <img src="assets/image/portfolio/pageExchange.jpg" alt="" class="img-fluid"/>
+                        <div class="portfolio-box-caption">
+                            <div class="projectTitle">
+                                <span>Project1</span>
+                            </div>
+                            <div class="projectDescrtion">
+                                <span>Lorem ,.................................</span>
+                            </div>
+                            <div class="link">
+                                <a href="https://obscure-stream-03506.herokuapp.com" class="btn btn-primary m-1">Link</a> 
+                                <a href="https://github.com/samuelyoo/TheSemicolons" class="btn btn-primary m-1">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm6 col-lg-4">
+                    <div href="" class="portfolio-box">
+                        <img src="assets/image/portfolio/pageExchange.jpg" alt="" class="img-fluid"/>
+                        <div class="portfolio-box-caption">
+                            <div class="projectTitle">
+                                <span>Project1</span>
+                            </div>
+                            <div class="projectDescrtion">
+                                <span>Lorem ,.................................</span>
+                            </div>
+                            <div class="link">
+                                <a href="https://obscure-stream-03506.herokuapp.com" class="btn btn-primary m-1">Link</a> 
+                                <a href="https://github.com/samuelyoo/TheSemicolons" class="btn btn-primary m-1">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm6 col-lg-4">
+                    <div href="" class="portfolio-box">
+                        <img src="assets/image/portfolio/pageExchange.jpg" alt="" class="img-fluid"/>
+                        <div class="portfolio-box-caption">
+                            <div class="projectTitle">
+                                <span>Project1</span>
+                            </div>
+                            <div class="projectDescrtion">
+                                <span>Lorem ,.................................</span>
+                            </div>
+                            <div class="link">
+                                <a href="https://obscure-stream-03506.herokuapp.com" class="btn btn-primary m-1">Link</a> 
+                                <a href="https://github.com/samuelyoo/TheSemicolons" class="btn btn-primary m-1">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactInfo"></section>
+    
+    
+    <!-- js -->
+    <script></script>
+    <script src="https://kit.fontawesome.com/bb6ee5fc4f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
