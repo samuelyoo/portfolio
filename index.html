@@ -13,6 +13,10 @@
             font-family: Open Sans, Helvetica Neue, Arial, sans-serif;
         }
 
+        .dropdown-menu{
+            border-color: white;
+        }
+
         #mainHeader {
             background-image: url("assets/image/headerBg.jpg");
             opacity: 90%;
@@ -24,7 +28,10 @@
         }
 
         section{
-            padding: 8rem 0;
+            padding: 6rem 0;
+        }
+        hr{
+            padding: 1rem 0;
         }
 
         .portfolio-box:hover .portfolio-box-caption {
@@ -42,18 +49,59 @@
             color: white;
             background-color: #00A699;
         }
+        .contacntBox{
+            padding-left:150px;
+            padding-top: 30px;
+        }
+        .iconBox{
+            padding: 2rem 0;
+        }
+        a {
+            color:#767676;
+            transition: all .2s;
+        }
+        a:hover{
+            color:#00A699;
+        }
+        button{
+            color:#00A699;
+        }
+        form {
+            margin: 10px 0 50px 0;
+        }
+        form label {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.5;
+            display: block;
+            max-width: 400px;
+            width: 100%;
+        }
+        input, textarea{
+            display: block;
+            width: 100%;
+            margin: 5px 0;
+            border: 1px solid #4A4A4A;
+            border-radius: 3px;
+            padding: 5px;
+        }
+        footer {
+            color:#767676;
+        }
+
     </style>
 </head>
 <body id="pageTop">
     <nav class="mainNav navbar navbar-light navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#pageTop">Samuel Yoo</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContents" aria-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContents" aria-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarContents">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContents">
               <ul class="navbar-nav nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#info">About</a>
                 </li>
                 <li class="nav-item">
@@ -99,7 +147,7 @@
                     </h2>
                     <hr class="my-4"/>
                     <p class="introContent">orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-                    <a href="assets/documents/resume_SamuelYoo.pdf" class="btn btn-light btn-xl js-scroll-trigger" role="button">Check Out Resume</a>
+                    <a href="assets/documents/resume_SamuelYoo.pdf" class="btn btn-light btn-xl js-scroll-trigger">Check Out Resume</a>
                 </div>
             </div>
         </div>
@@ -143,8 +191,17 @@
               </div>
         </div>
     </section>
+
     <section id="portfolio">
-        <div class="container-fluid p-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg text-center">
+                    <h2 class="sectionHead">Portfolio</h2>
+                    <hr class="my-4"/>
+                </div>
+            </div>
+        </div>
+        <div class="container p-0">
             <div class="row">
                 <div class="col-sm6 col-lg-4">
                     <div href="" class="portfolio-box">
@@ -251,11 +308,58 @@
             </div>
         </div>
     </section>
-    <section id="contactInfo"></section>
     
-    
+    <section id="contactInfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="sectionHead">Let's Get In Touch</h2>
+                    <hr class="my-4"/>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aene</p>
+                </div>
+            </div>
+            <div class="row text-center mx-auto iconBox">
+                <div class="col d-flex justify-content-around p-1 pb-3">
+                    <a href="https://github.com/samuelyoo/"><i class="fab fa-linkedin-in fa-3x mb-3 sr-contact"></i></a>
+                    <a href="https://github.com/samuelyoo/" target="_blank"><i class="fa fa-github fa-3x mb-3 sr-contact"></i></a>
+                    <a href="mailto:sam.hc.yoo@gmail.com"><i class="fa fa-envelope fa-3x mb-3 sr-contact" href="mailto:sam.hc.yoo@gmail.com"></i></a>
+                </div>
+            </div>
+            <div class="row container">
+                <div class="col-md-6" style="margin-top:0; margin-right:0;margin-left:0">
+                    <div class="contctBox">
+                        <h3 id="contact">Contac Me</h3>
+                        <hr/>
+                        <p>Do you any question?<br/> Please leave a message below!</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="https://formspree.io/xeqrpnoo" method="POST">
+                        <label> <span> Your email:</span>
+                            <input type="text" name="_replyto" class="form-control">
+                        </label>
+                        <label> <span> Your message:</span>
+                            <textarea name="message" class="form-control"></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-center mt-0">
+        <p style="font-size: 10px; padding:5px; margin-top:10px; color: #00A699;">© Samuel Yoo with Bootstrap</p>    
+    </footer>
+
     <!-- js -->
-    <script></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <!-- <script>
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+      formbutton("create", {action: "https://formspree.io/xeqrpnoo"})
+    </script> -->
     <script src="https://kit.fontawesome.com/bb6ee5fc4f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
